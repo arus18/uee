@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="group">
+        <item>Vegetables</item>
+        <item>Fat,oil</item>
+        <item>Animal residues</item>
+        <item>Food-industry waste</item>
+    </string-array>
+    <string-array name="Vegetables">
+        <item>Onion</item>
+        <item>Onion peel</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Fresh pumpkin</item>
+    </string-array>
+    <string-array name="Fat_oil">
+        <item>Glycerine</item>
+        <item>Linseed oil</item>
+        <item>Rape-seed oil</item>
+        <item>Soja bean oil</item>
+        <item>Sun flower oil</item>
+    </string-array>
+    <string-array name="Animal_residues">
+        <item>Liquid pig manure</item>
+        <item>Pig manure with litter</item>
+        <item>Fresh Pig manure</item>
+        <item>Sheep manure</item>
+        <item>Fresh cow manure</item>
+        <item>Cattle manure</item>
+    </string-array>
+    <string-array name="Food_industry_waste">
+        <item>Oat-flakes</item>
+        <item>Bran particles</item>
+        <item>Apple marrow</item>
+        <item>Soya flour</item>
+        <item>CGM</item>
+        <item>Milk sugar</item>
+    </string-array>
+</resources>
