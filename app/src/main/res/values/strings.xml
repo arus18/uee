@@ -36,4 +36,23 @@
         <item>CGM</item>
         <item>Milk sugar</item>
     </string-array>
+
+    <string name="tv_userName" />
+    <string name="tv_email" />
+    <string name="tv1">User Name</string>
+    <string name="edt_userName" />
+    <string name="tv2">Mobile Number</string>
+    <string name="tv3">Address</string>
+    <string name="btn_save">SAVE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="tv4">Change Password</string>
+    <string name="tv_currentPwd">Current Password</string>
+    <string name="tv_newPwd">New Password</string>
+    <string name="tv_rePwd">Re-Enter Password</string>
+    <string name="tv_requestPanel">Request Panel</string>
+    <string name="tv_height">Enter Panel Height ( meters )</string>
+    <string name="tv_width">Enter Panel Width ( meters )</string>
+    <string name="tv_cost">Panel Cost ( LKR )</string>
+    <string name="tv_cCost" />
+    <string name="btn_request">Request</string>
 </resources>
