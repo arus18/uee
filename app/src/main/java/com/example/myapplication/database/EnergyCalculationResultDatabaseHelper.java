@@ -23,8 +23,8 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_QUANTITY = "quantity";
     private static final String KEY_RESULT = "result";
 
-    public EnergyCalculationResultDatabaseHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, null, version);
+    public EnergyCalculationResultDatabaseHelper(@Nullable Context context) {
+        super(context,DATABASE_NAME, null, 1);
     }
 
     @Override
@@ -41,8 +41,7 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void addEnergyResult(EnergyCalculationResult result) {
-
+    public void addEnergyResult(EnergyCalculationResult result) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_GROUP, result.getGroup()); // Contact Name

@@ -2,7 +2,7 @@
     <string name="app_name">My Application</string>
     <string-array name="group">
         <item>Vegetables</item>
-        <item>Fat,oil</item>
+        <item>Fat, oil</item>
         <item>Animal residues</item>
         <item>Food-industry waste</item>
     </string-array>
