@@ -64,7 +64,6 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 EnergyCalculationResult energyCalculationResult = new EnergyCalculationResult();
-                System.out.println(cursor.getString(1));
                 energyCalculationResult.setId(Integer.parseInt(cursor.getString(0)));
                 energyCalculationResult.setGroup(cursor.getString(1));
                 energyCalculationResult.setType(cursor.getString(2));

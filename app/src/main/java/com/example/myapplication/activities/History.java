@@ -23,7 +23,6 @@ public class History extends AppCompatActivity {
         EnergyCalculationResultDatabaseHelper db = new EnergyCalculationResultDatabaseHelper(this);
         List<EnergyCalculationResult> list = db.getAllEnergyCalculationResults();
         List<String> resultList = new ArrayList<>();
-        System.out.println(resultList.size());
         for(EnergyCalculationResult result:list){
             resultList.add(result.getResult());
         }
