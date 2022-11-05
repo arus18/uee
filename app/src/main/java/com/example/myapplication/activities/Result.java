@@ -31,7 +31,8 @@ public class Result extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.addEnergyResult(new EnergyCalculationResult(BiogasEnergyAPICall.selectedGroup,BiogasEnergyAPICall.selectedType,Integer.parseInt(BiogasEnergyAPICall.QUANTITY),str));
+                long l = db.addEnergyResult(new EnergyCalculationResult(BiogasEnergyAPICall.selectedGroup,BiogasEnergyAPICall.selectedType,Integer.parseInt(BiogasEnergyAPICall.QUANTITY),str));
+                System.out.println(l);
             }
         });
         history.setOnClickListener(new View.OnClickListener() {

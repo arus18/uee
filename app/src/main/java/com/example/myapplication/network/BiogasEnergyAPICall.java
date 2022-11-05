@@ -29,8 +29,7 @@ public class BiogasEnergyAPICall {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(context,response,Toast.LENGTH_LONG).show();
-                        System.out.println(response);
+                        Toast.makeText(context,"Completed",Toast.LENGTH_LONG).show();
                         response = response.replaceAll("\\\\","");
                         Pattern p = Pattern.compile("<div class=\"calc\">rnttt(.*?)m<sup>3");
                         Matcher m = p.matcher(response);

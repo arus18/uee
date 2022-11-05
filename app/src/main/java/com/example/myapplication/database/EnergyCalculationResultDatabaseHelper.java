@@ -18,7 +18,7 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "uee";
     private static final String TABLE_ENERGY_CALCULATION_RESULTS = "energy_calculation_results";
     private static final String KEY_ID = "id";
-    private static final String KEY_GROUP = "group";
+    private static final String KEY_GROUP = "group_g";
     private static final String KEY_TYPE = "phone_number";
     private static final String KEY_QUANTITY = "quantity";
     private static final String KEY_RESULT = "result";
@@ -41,15 +41,16 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void addEnergyResult(EnergyCalculationResult result) {
+    public long addEnergyResult(EnergyCalculationResult result) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_GROUP, result.getGroup()); // Contact Name
         values.put(KEY_TYPE, result.getType()); // Contact Phone
         values.put(KEY_QUANTITY,result.getQuantity());
         values.put(KEY_RESULT,result.getResult());
-        db.insert(TABLE_ENERGY_CALCULATION_RESULTS, null, values);
+        long l = db.insert(TABLE_ENERGY_CALCULATION_RESULTS, null, values);
         db.close();
+        return l;
     }
 
 
@@ -63,9 +64,11 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 EnergyCalculationResult energyCalculationResult = new EnergyCalculationResult();
+                System.out.println(cursor.getString(1));
                 energyCalculationResult.setId(Integer.parseInt(cursor.getString(0)));
                 energyCalculationResult.setGroup(cursor.getString(1));
                 energyCalculationResult.setType(cursor.getString(2));
+                energyCalculationResult.setResult(cursor.getString(3));
                 energyCalculationResults.add(energyCalculationResult);
             } while (cursor.moveToNext());
         }
