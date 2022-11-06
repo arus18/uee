@@ -36,4 +36,15 @@
         <item>CGM</item>
         <item>Milk sugar</item>
     </string-array>
+
+    <string-array name="type">
+        <item>Roof Top</item>
+        <item>On a Slab</item>
+        <item>On Land</item>
+    </string-array>
+
+    <string-array name="messure">
+    <item>Meter</item>
+    <item>Foots</item>
+    </string-array>
 </resources>
