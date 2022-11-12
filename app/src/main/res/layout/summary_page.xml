@@ -6,11 +6,12 @@
     android:layout_height="match_parent">
 
 
+
     <TextView
         android:id="@+id/Sname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Name of the site"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -24,7 +25,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Total Area"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -39,7 +40,7 @@
         android:id="@+id/area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Text 01"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -53,7 +54,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Total Output (Kwh)"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -68,7 +69,7 @@
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Text 02"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -82,7 +83,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Generated Units"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -97,7 +98,7 @@
         android:id="@+id/units"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Text 03"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -112,7 +113,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Monthly Income"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -127,7 +128,7 @@
         android:id="@+id/income"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="Text 04"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -135,6 +136,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <Button
+        android:id="@+id/recalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Re-alculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:text="History"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recalc"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

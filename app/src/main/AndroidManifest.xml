@@ -31,7 +31,17 @@
             android:exported="false" />
 
         <activity
+            android:name=".activities.solar_history"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.summary"
+            android:exported="false" />
+        <activity
+            android:name=".activities.feedback"
+            android:exported="false" />
+        <activity
+            android:name=".activities.thank"
             android:exported="false" />
 
         <activity

@@ -1,7 +1,5 @@
 package com.example.myapplication.activities;
 
-import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,16 +11,16 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
-import com.example.myapplication.database.SolarEnergyResult;
+import com.example.myapplication.database.SolarEnergyResultDBHelper;
 
 
 public class calculate_solar_energy extends AppCompatActivity{
-    SolarEnergyResult db;
+    SolarEnergyResultDBHelper db;
     EditText SiteName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        db=new SolarEnergyResult(this);
+        db=new SolarEnergyResultDBHelper(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculate_solar_energy);
         Button button = findViewById(R.id.btncalc);
@@ -34,7 +32,7 @@ public class calculate_solar_energy extends AppCompatActivity{
 
 
 
-        db = new SolarEnergyResult(this);
+        db = new SolarEnergyResultDBHelper(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
