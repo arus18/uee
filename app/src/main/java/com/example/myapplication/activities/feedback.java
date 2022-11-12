@@ -32,13 +32,15 @@ public class feedback extends AppCompatActivity {
                 builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title);
 
                 //Setting message manually and performing action on button click
-                builder.setMessage("Do you want to move to the Previous Page ?")
+                builder.setMessage("Do you want to move to the Home Page ?")
                         .setCancelable(false)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                finish();
-                                Toast.makeText(getApplicationContext(), "Opening the Previous Page",
+                                //finish();
+                                Toast.makeText(getApplicationContext(), "Opening the Home Page",
                                         Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(feedback.this,SolarHome.class);
+                                startActivity(intent);
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
