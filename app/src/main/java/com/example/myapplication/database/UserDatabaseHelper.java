@@ -17,6 +17,8 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_NAME = "name";
     private static final String KEY_PASSWORD = "password";
     private static final String KEY_EMAIL = "email";
+    private static final String KEY_ADDRESS = "address";
+    private static final String KEY_CONTACT = "contact";
 
     public UserDatabaseHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, null, version);
@@ -26,7 +28,7 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_USERS + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-                + KEY_PASSWORD + " TEXT," + KEY_EMAIL + " TEXT," +")";
+                + KEY_PASSWORD + " TEXT," + KEY_EMAIL + " TEXT," + KEY_ADDRESS + " TEXT," + KEY_CONTACT + " TEXT" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
@@ -55,7 +57,8 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
                 new String[] { email }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
-        User user = new User(cursor.getString(1),cursor.getString(2),cursor.getString(3));
+        User user = new User(cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),
+                cursor.getString(5));
         return user;
     }
 

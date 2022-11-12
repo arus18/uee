@@ -16,6 +16,29 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".activities.CalculatePanelCost"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.PanelRequest"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.UserProfile"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.RequestPanel"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.ChangePwd"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.UserDetails"
+            android:exported="false">
+        </activity> 
             android:name=".activities.CostHistory2"
             android:exported="false">
         </activity>
