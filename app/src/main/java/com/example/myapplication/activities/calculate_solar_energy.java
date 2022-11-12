@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -68,7 +69,8 @@ public class calculate_solar_energy extends AppCompatActivity{
 
                 startActivity(intent);
 
-
+                Toast.makeText(getApplicationContext(), "Energy Calculated",
+                        Toast.LENGTH_SHORT).show();
 
             }
         });

@@ -7,17 +7,18 @@
 
     <LinearLayout
         android:id="@+id/cardView"
-        android:layout_width="285dp"
-        android:layout_height="402dp"
+        android:layout_width="291dp"
+        android:layout_height="427dp"
         android:layout_marginStart="25dp"
-        android:background="#84EF8F"
         android:layout_marginEnd="25dp"
+        android:background="#84EF8F"
+        android:gravity="top"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/recalc"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/Sname"
@@ -133,7 +134,7 @@
         android:text="Re-alculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintVertical_bias="0.0" />

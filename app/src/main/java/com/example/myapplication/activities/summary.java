@@ -54,11 +54,6 @@ public class summary extends AppCompatActivity {
         T5.setText(String.valueOf(income));
 
 
-        /*T2.setText((int) area);
-        T3.setText((int) output);
-        T4.setText((int) income);
-        T5.setText((int) units);*/
-
         Button history= findViewById(R.id.history);
         Button recalc=findViewById(R.id.recalc);
         history.setOnClickListener(new View.OnClickListener() {
