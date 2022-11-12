@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.myapplication.activities.Home;
+import com.example.myapplication.activities.SolarHome;
 import com.example.myapplication.activities.calculate_solar_energy;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSolar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, calculate_solar_energy.class);
+                Intent intent = new Intent(MainActivity.this, SolarHome.class);
                 startActivity(intent);
             }
         });

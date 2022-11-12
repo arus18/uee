@@ -37,6 +37,11 @@
         <activity
             android:name=".activities.summary"
             android:exported="false" />
+
+        <activity
+            android:name=".activities.SolarHome"
+            android:exported="false" />
+
         <activity
             android:name=".activities.feedback"
             android:exported="false" />
