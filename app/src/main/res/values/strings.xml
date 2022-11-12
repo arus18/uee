@@ -2,7 +2,7 @@
     <string name="app_name">My Application</string>
     <string-array name="group">
         <item>Vegetables</item>
-        <item>Fat,oil</item>
+        <item>Fat, oil</item>
         <item>Animal residues</item>
         <item>Food-industry waste</item>
     </string-array>
@@ -75,14 +75,16 @@
     <string name="btn_enter">ENTER</string>
     <string name="tv_cPcost">Calculate Panel Cost</string>
 
-    <string-array name="setting">
-        <item>User Details</item>
-        <item>Change Password</item>
-        <item>Request Panel</item>
+    <string-array name="type">
+        <item>Roof Top</item>
+        <item>On a Slab</item>
+        <item>On Land</item>
     </string-array>
 
+    <string-array name="messure">
+    <item>Meter</item>
+    <item>Foots</item>
+    </string-array>
     <string name="dialog_message">Welcome to Alert Dialog</string>
     <string name="dialog_title">Javatpoint Alert Dialog</string>
-
-
 </resources>
