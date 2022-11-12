@@ -26,7 +26,7 @@ public class Result extends AppCompatActivity {
         TextView textView = findViewById(R.id.results);
         Intent intent = getIntent();
         String str = intent.getStringExtra("result");
-        textView.setText(str);
+        textView.setText(str+"m^3");
         Button button = findViewById(R.id.save);
         Button history = findViewById(R.id.history_b);
         builder = new AlertDialog.Builder(this);
