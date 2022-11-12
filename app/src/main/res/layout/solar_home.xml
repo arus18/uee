@@ -17,16 +17,9 @@
         app:contentPadding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/energy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center|end"
-            app:srcCompat="@drawable/money" />
 
         <TextView
             android:id="@+id/costHeading"
@@ -47,36 +40,23 @@
         android:layout_marginBottom="20dp"
         app:cardBackgroundColor="#F1857D"
         app:contentPadding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/garbage"
+        app:layout_constraintBottom_toTopOf="@+id/feed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cost">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center|end"
-            app:srcCompat="@drawable/fire" />
 
         <TextView
             android:id="@+id/energyHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Energy"
+            android:text="Energy Calculation"
             android:textSize="34sp" />
-
-        <ImageView
-            android:id="@+id/energy_history_icon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@android:drawable/ic_menu_recent_history" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/garbage"
+        android:id="@+id/feed"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
@@ -90,26 +70,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/energy">
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center|end"
-            app:srcCompat="@drawable/garbage" />
-
         <TextView
-            android:id="@+id/garbageHeading"
+            android:id="@+id/feedback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Garbage"
+            android:text="Feedback"
             android:textSize="34sp" />
-
-        <ImageView
-            android:id="@+id/garbage_history_icon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@android:drawable/ic_menu_recent_history" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
