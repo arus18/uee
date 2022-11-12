@@ -51,7 +51,7 @@ public class summary extends AppCompatActivity {
         T2.setText(String.valueOf(area));
         T3.setText(String.valueOf(output));
         T4.setText(String.valueOf(units));
-        T5.setText(String.valueOf(income));
+        T5.setText(String.valueOf("Rs."+income));
 
 
         Button history= findViewById(R.id.history);
