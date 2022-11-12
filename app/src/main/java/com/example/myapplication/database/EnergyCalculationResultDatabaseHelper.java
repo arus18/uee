@@ -17,7 +17,7 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper{
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "uee";
-    private static final String TABLE_ENERGY_CALCULATION_RESULTS = "energy_calculation_results";
+    private static final String TABLE_ENERGY_CALCULATION_RESULTS = "cost_calculation_results";
     private static final String KEY_ID = "id";
     private static final String KEY_GROUP = "group_g";
     private static final String KEY_TYPE = "phone_number";

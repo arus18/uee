@@ -20,6 +20,16 @@ public class BiogasHome extends AppCompatActivity {
         CardView garbage = findViewById(R.id.garbage);
         ImageView energyHistory = findViewById(R.id.energy_history_icon);
         ImageView garbageHistory = findViewById(R.id.garbage_history_icon);
+        CardView cardView2 = findViewById(R.id.cost);
+
+
+        cardView2.setOnClickListener ( new View.OnClickListener () {
+            @Override
+            public void onClick ( View view ) {
+                Intent intent = new Intent (BiogasHome.this, AddCostCalculation.class);
+                startActivity(intent);
+            }
+        } );
         energyHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

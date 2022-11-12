@@ -16,6 +16,23 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".activities.CostHistory2"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.CostHistory"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activities.CostResult"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activities.CostMoreDetails"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activities.AddCostCalculation"
+            android:exported="false">
+            </activity>
+         <activity
             android:name=".activities.GarbageHistory"
             android:exported="false"
             android:label="History"/>
@@ -51,7 +68,7 @@
         <activity
             android:name=".activities.solar_history"
             android:exported="false" />
-
+            
         <activity
             android:name=".activities.summary"
             android:exported="false" />
