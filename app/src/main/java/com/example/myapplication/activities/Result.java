@@ -29,9 +29,8 @@ public class Result extends AppCompatActivity {
         textView.setText(str);
         Button button = findViewById(R.id.save);
         Button history = findViewById(R.id.history_b);
-        builder = new AlertDialog.Builder(this);builder.setMessage("message") .setTitle("title");
-        builder.setMessage("Do you want to close this application ?")
-                .setCancelable(false)
+        builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false)
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
@@ -39,7 +38,7 @@ public class Result extends AppCompatActivity {
                 });
 
         AlertDialog alert = builder.create();
-        alert.setTitle("AlertDialogExample");
+        alert.setTitle("Saved successfully");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

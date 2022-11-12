@@ -32,7 +32,7 @@ public class summary extends AppCompatActivity {
         TextView T5=(TextView) findViewById(R.id.units);
         Intent intent = getIntent();
 
-        String sname = intent.getStringExtra("Sname");
+        /*String sname = intent.getStringExtra("Sname");
         Float area = intent.getFloatExtra("area");
         Float output = intent.getFloatExtra("output");
         Float income = intent.getFloatExtra("income");
@@ -42,6 +42,6 @@ public class summary extends AppCompatActivity {
         T2.setText.(area);
         T3.setText(output);
         T4.setText(income);
-        T5.setText(units);
+        T5.setText(units);*/
     }
 }

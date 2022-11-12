@@ -1,9 +1,11 @@
 package com.example.myapplication.activities;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +22,8 @@ import java.util.Calendar;
 
 public class AddGarbage extends AppCompatActivity {
 
+    AlertDialog.Builder builder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -32,6 +36,16 @@ public class AddGarbage extends AppCompatActivity {
         EditText size = findViewById(R.id.garbage_input);
         Button save = findViewById(R.id.save_garbage);
         Button history = findViewById(R.id.garbage_history_button);
+        builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false)
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alert = builder.create();
+        alert.setTitle("Saved successfully");
         startDateC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +104,7 @@ public class AddGarbage extends AppCompatActivity {
                 collectedGarbage.setEndDate(endDate.getText().toString());
                 collectedGarbage.setSize(Integer.parseInt(size.getText().toString()));
                 cdbh.addGarbage(collectedGarbage);
+                alert.show();
             }
         });
     }
