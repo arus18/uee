@@ -5,9 +5,14 @@
       <map>
         <entry key="app/src/main/res/layout/activity_calculate_enrgy.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20729166666666668" />
+        <entry key="app/src/main/res/layout/add_garbage.xml" value="0.20625" />
         <entry key="app/src/main/res/layout/biogas_home.xml" value="0.20729166666666668" />
+        <entry key="app/src/main/res/layout/biogas_intro.xml" value="0.16979166666666667" />
         <entry key="app/src/main/res/layout/calculate_energy.xml" value="0.20625" />
+        <entry key="app/src/main/res/layout/garbage_history.xml" value="0.20625" />
+        <entry key="app/src/main/res/layout/garbage_item.xml" value="0.20625" />
         <entry key="app/src/main/res/layout/history.xml" value="0.20625" />
+        <entry key="app/src/main/res/layout/history_item.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/home.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/result_item.xml" value="0.17239583333333333" />
         <entry key="app/src/main/res/layout/results.xml" value="0.20625" />

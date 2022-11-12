@@ -1,6 +1,8 @@
 package com.example.myapplication.network;
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -22,7 +24,7 @@ public class BiogasEnergyAPICall {
     private static final String URL = "https://biteco-energy.com/biogas-calculator/";
     public static String QUANTITY = "";
 
-    public static void energyResult(String input, Context context){
+    public static void energyResult(String input, Context context,ProgressBar progressBar){
         QUANTITY = input;
         String summary = "{\"0\":{\"group\":"+"\""+selectedGroup+"\""+",\"type\":"+"\""+selectedType+"\""+",\"quantity\":"+"\""+input+"\""+"}}";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
@@ -37,6 +39,7 @@ public class BiogasEnergyAPICall {
                         String result = m.group(1);
                         Intent intent = new Intent(context, Result.class);
                         intent.putExtra("result", result);
+                        progressBar.setVisibility(View.GONE);
                         context.startActivity(intent);
                     }
                 },
@@ -64,8 +67,6 @@ public class BiogasEnergyAPICall {
             }
 
         };
-        System.out.println(summary);
-        System.out.println(stringRequest);
         Volley.newRequestQueue(context).add(stringRequest);
     }
 }

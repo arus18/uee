@@ -1,4 +1,5 @@
 package com.example.myapplication.adapters;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
@@ -12,18 +13,19 @@ import androidx.appcompat.app.AlertDialog;
 
 import com.example.myapplication.R;
 import com.example.myapplication.database.EnergyCalculationResultDatabaseHelper;
-import com.example.myapplication.model.EnergyCalculationResult;
+import com.example.myapplication.model.CollectedGarbage;
+
 import java.util.List;
 
-public class ResultAdapter extends BaseAdapter {
+public class GarbageAdapter extends BaseAdapter {
 
     private Context context;
-    private List<EnergyCalculationResult> arrayList;
+    private List<CollectedGarbage> arrayList;
     private TextView result;
     private ImageView delete;
     AlertDialog.Builder builder;
 
-    public ResultAdapter(Context context,List<EnergyCalculationResult> list){
+    public GarbageAdapter(Context context,List<CollectedGarbage> list){
         this.context = context;
         this.arrayList = list;
     }
@@ -45,10 +47,10 @@ public class ResultAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        view = LayoutInflater.from(context).inflate(R.layout.history_item, viewGroup, false);
-        result = view.findViewById(R.id.history_item_text);
-        delete = view.findViewById(R.id.delete_result);
-        result.setText(arrayList.get(i).getResult());
+        view = LayoutInflater.from(context).inflate(R.layout.garbage_item, viewGroup, false);
+        result = view.findViewById(R.id.garbage_item_text);
+        delete = view.findViewById(R.id.delete_garbage);
+        result.setText(String.valueOf(arrayList.get(i).getSize()));
         builder = new AlertDialog.Builder(context);
         builder.setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {

@@ -10,18 +10,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/solar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/solar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
         app:cardBackgroundColor="#F6805A"
         app:cardCornerRadius="5dp"
         app:contentPadding="15dp"
@@ -29,24 +31,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/username">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/contrast" />
 
         <TextView
             android:id="@+id/solarHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="TextView"
+            android:text="Solar"
             android:textSize="48sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/biogas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
         app:cardBackgroundColor="#76E87A"
         app:contentPadding="15dp"
         app:layout_constraintBottom_toTopOf="@+id/aboutBiogas"
@@ -55,12 +64,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/solar">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/leaf"
+            />
+
         <TextView
             android:id="@+id/biogasHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="TextView"
+            android:text="Biogas"
             android:textSize="48sp" />
     </androidx.cardview.widget.CardView>
 
@@ -69,21 +86,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         app:cardBackgroundColor="#50A4E6"
         app:contentPadding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/aboutSolar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/biogas">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_dialog_info" />
 
         <TextView
             android:id="@+id/aboutBiogasHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="TextView"
+            android:text="Biogas Intro"
             android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
 
@@ -94,21 +117,28 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="20dp"
         android:foregroundGravity="center"
         app:cardBackgroundColor="#4CAEDA"
         app:contentPadding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aboutBiogas">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_dialog_info" />
 
         <TextView
             android:id="@+id/aboutSolarHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="TextView"
+            android:text="Solar Intro"
             android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
