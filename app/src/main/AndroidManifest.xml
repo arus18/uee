@@ -14,40 +14,29 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".activities.CostHistory"
+            android:name=".activities.CostHistory2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".activities.CostHistory"
+            android:exported="false"></activity>
         <activity
             android:name=".activities.CostResult"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activities.CostMoreDetails"
-            android:exported="false"
-            >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activities.AddCostCalculation"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-<!--        <activity-->
-<!--            android:name=".TypeSpinner"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".GroupSpinner"-->
-<!--            android:exported="false" />-->
+            android:exported="false"></activity> <!-- <activity -->
+        <!-- android:name=".TypeSpinner" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".GroupSpinner" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".activities.History"
             android:exported="false" />

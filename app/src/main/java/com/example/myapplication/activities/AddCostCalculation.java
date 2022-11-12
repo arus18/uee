@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myapplication.R;
 
@@ -29,6 +30,8 @@ public class AddCostCalculation extends AppCompatActivity {
         editText3=findViewById ( R.id.editTextNumber3 );
 
 
+
+
         conTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,8 +43,24 @@ public class AddCostCalculation extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View view) {
-            Intent intent = new Intent( AddCostCalculation.this, CostResult.class);
-            startActivity(intent);
+                float output,area,kg;
+
+                area=Float.parseFloat ( editText1.getText().toString() );
+                kg=Float.parseFloat ( editText2.getText().toString() );
+                output= (float) (area*4200.00);
+
+                Intent intent = new Intent(AddCostCalculation.this, CostResult.class);
+
+
+                intent.putExtra("output",output);
+                intent.putExtra ( "area",area );
+                intent.putExtra ( "kg",kg );
+
+
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(), "Cost Calculated",
+                        Toast.LENGTH_SHORT).show();
         }
     });
 
