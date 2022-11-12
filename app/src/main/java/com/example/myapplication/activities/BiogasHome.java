@@ -17,12 +17,21 @@ public class BiogasHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.biogas_home);
         CardView cardView = findViewById(R.id.energy);
-        cardView.setOnClickListener(new View.OnClickListener() {
+        CardView cardView2 = findViewById(R.id.cost);
+//        cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+////            public void onClick(View view) {
+////                Intent intent = new Intent(BiogasHome.this,CalculateEnergy.class);
+////                startActivity(intent);
+////            }
+//        });
+
+        cardView2.setOnClickListener ( new View.OnClickListener () {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(BiogasHome.this,CalculateEnergy.class);
+            public void onClick ( View view ) {
+                Intent intent = new Intent (BiogasHome.this, AddCostCalculation.class);
                 startActivity(intent);
             }
-        });
+        } );
     }
 }
