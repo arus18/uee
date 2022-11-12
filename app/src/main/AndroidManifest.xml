@@ -16,6 +16,12 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".activities.GarbageHistory"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddGarbage"
+            android:exported="false" />
+        <activity
             android:name=".activities.Result"
             android:exported="false" />
         <activity

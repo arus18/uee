@@ -53,6 +53,12 @@
             android:layout_gravity="center"
             android:text="TextView"
             android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/energy_history_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_menu_recent_history" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -77,6 +83,12 @@
             android:layout_gravity="center"
             android:text="TextView"
             android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/garbage_history_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_menu_recent_history" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

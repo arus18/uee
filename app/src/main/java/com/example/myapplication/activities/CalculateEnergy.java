@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -28,11 +29,13 @@ public class CalculateEnergy extends AppCompatActivity{
         setContentView(R.layout.calculate_energy);
         Button calculate = findViewById(R.id.calculate_button);
         EditText text = findViewById(R.id.input_k);
+        ProgressBar progressBar = findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.GONE);
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BiogasEnergyAPICall.energyResult(text.getText().toString(),view.getContext());
-
+                progressBar.setVisibility(View.VISIBLE);
+                BiogasEnergyAPICall.energyResult(text.getText().toString(),view.getContext(),progressBar);
             }
         });
         Spinner spinner = findViewById(R.id.group_Spinner);
@@ -73,8 +76,6 @@ public class CalculateEnergy extends AppCompatActivity{
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String item = adapterView.getItemAtPosition(i).toString();
                 BiogasEnergyAPICall.selectedType = item;
-                System.out.println(BiogasEnergyAPICall.selectedGroup);
-                System.out.println(BiogasEnergyAPICall.selectedType);
             }
 
             @Override
