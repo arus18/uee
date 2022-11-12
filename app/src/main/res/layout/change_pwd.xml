@@ -15,7 +15,10 @@
         android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:text="@string/etp_rePwd"
+        android:textAlignment="center"
         android:textColor="#B3000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_rePwd" />
@@ -31,6 +34,7 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etp_newPwd" />
@@ -44,7 +48,10 @@
         android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:text="@string/etp_Pwd"
+        android:textAlignment="center"
         android:textColor="#B3000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_newPwd" />
@@ -60,6 +67,7 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etp_currentPwd" />
@@ -75,6 +83,7 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,6 +100,7 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv4" />
@@ -104,19 +114,23 @@
         android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:text="@string/etp_currentPwd"
+        android:textAlignment="center"
         android:textColor="#B3000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_currentPassword" />
 
     <Button
-        android:id="@+id/btn_cancel"
+        android:id="@+id/btn_request"
         android:layout_width="155dp"
         android:layout_height="60dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="34dp"
         android:backgroundTint="#F31111"
         android:text="@string/btn_cancel"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etp_rePwd" />
 
@@ -128,6 +142,7 @@
         android:layout_marginTop="58dp"
         android:backgroundTint="#F31111"
         android:text="@string/btn_save"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etp_rePwd" />
 

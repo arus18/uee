@@ -53,9 +53,7 @@ public class User {
         this.userName = userName;
     }
 
-    public String getAddress() {
-        return address;
-    }
+    public String getAddress() { return address; }
 
     public void setAddress(String address) {
         this.address = address;

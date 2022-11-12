@@ -37,10 +37,10 @@
         <item>Milk sugar</item>
     </string-array>
 
-    <string name="tv_userName" />
-    <string name="tv_email" />
+    <string name="tv_userName">Yohan Asitha</string>
+    <string name="tv_email">yohanasitha98@gmail.com</string>
     <string name="tv1">User Name</string>
-    <string name="edt_userName" />
+    <string name="edt_userName">Yohan Asitha</string>
     <string name="tv2">Mobile Number</string>
     <string name="tv3">Address</string>
     <string name="btn_save">SAVE</string>
@@ -55,4 +55,34 @@
     <string name="tv_cost">Panel Cost ( LKR )</string>
     <string name="tv_cCost" />
     <string name="btn_request">Request</string>
+    <string name="edt_address">No 92/2, Irattakulama Road, Madampe</string>
+    <string name="edt_number">0775160907</string>
+    <string name="tv_settings">Yohan Asitha</string>
+    <string name="tv_setting">Settings</string>
+    <string name="tv_userDetails">User Details</string>
+    <string name="tv_cPwd">Change Password</string>
+    <string name="tv_rPanel">Request Panel</string>
+    <string name="tv_logOut">Log Out</string>
+    <string name="tv_pp">Privacy Policy</string>
+    <string name="tv_tc">Terms and Conditions</string>
+    <string name="etp_currentPwd">yohanasitha</string>
+    <string name="etp_Pwd">yohanasitha</string>
+    <string name="etp_rePwd">yohanasitha</string>
+    <string name="tv_notification">Request Sent Successfully!</string>
+    <string name="tv_ty">Thank You</string>
+    <string name="btn_back">GO BACK TO HOME</string>
+    <string name="btn_calculate">Calculate Cost</string>
+    <string name="btn_enter">ENTER</string>
+    <string name="tv_cPcost">Calculate Panel Cost</string>
+
+    <string-array name="setting">
+        <item>User Details</item>
+        <item>Change Password</item>
+        <item>Request Panel</item>
+    </string-array>
+
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+
+
 </resources>

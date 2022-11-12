@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textAlignment="textEnd"
-    tools:context=".activities.RequestPanel">
+    tools:context=".activities.CalculatePanelCost">
 
     <TextView
-        android:id="@+id/tv_height3"
-        android:layout_width="133dp"
+        android:id="@+id/tv_height"
+        android:layout_width="176dp"
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
-        android:text="@string/tv_cost"
+        android:layout_marginTop="68dp"
+        android:text="@string/tv_height"
         android:textAlignment="viewStart"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_height2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_cPcost" />
 
     <TextView
         android:id="@+id/tv_height2"
         android:layout_width="176dp"
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:text="@string/tv_width"
         android:textAlignment="viewStart"
         android:textColor="#000000"
@@ -35,41 +34,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_height" />
 
-    <TextView
-        android:id="@+id/tv_requestPanel"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="114dp"
-        android:text="@string/tv_requestPanel"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_height"
-        android:layout_width="176dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="78dp"
-        android:text="@string/tv_height"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_requestPanel" />
-
     <EditText
         android:id="@+id/edt_height"
         android:layout_width="198dp"
         android:layout_height="57dp"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="number"
@@ -78,13 +47,13 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_requestPanel" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_cPcost" />
 
     <EditText
         android:id="@+id/edt_width"
         android:layout_width="198dp"
         android:layout_height="57dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="number"
@@ -95,44 +64,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_height" />
 
-    <TextView
-        android:id="@+id/tv_cCost"
-        android:layout_width="198dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="4dp"
-        android:text="@string/tv_cCost"
-        android:textAlignment="textEnd"
-        android:textColor="#B3000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_width" />
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#F31111"
+        android:onClick="openRequestPanel"
+        android:text="@string/btn_enter"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height2" />
 
     <Button
         android:id="@+id/btn_request"
         android:layout_width="155dp"
         android:layout_height="60dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="216dp"
-        android:backgroundTint="#F31111"
-        android:text="@string/btn_request"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_height3" />
-
-    <Button
-        android:id="@+id/btn_cancel"
-        android:layout_width="155dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="36dp"
         android:backgroundTint="#F31111"
         android:text="@string/btn_cancel"
-        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cCost" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_width" />
+
+    <TextView
+        android:id="@+id/tv_cPcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/tv_cPcost"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
