@@ -50,7 +50,7 @@
     <string name="tv_newPwd">New Password</string>
     <string name="tv_rePwd">Re-Enter Password</string>
     <string name="tv_requestPanel">Request Panel</string>
-    <string name="tv_height">Enter Panel Height ( meters )</string>
+    <string name="tv_height">Enter Panel Length ( meters )</string>
     <string name="tv_width">Enter Panel Width ( meters )</string>
     <string name="tv_cost">Panel Cost ( LKR )</string>
     <string name="tv_cCost" />

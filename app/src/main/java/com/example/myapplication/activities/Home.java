@@ -28,6 +28,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this,BiogasIntro.class);
+                startActivity(intent);
             }
         });
         cardView.setOnClickListener(new View.OnClickListener() {

@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_add_cost_calculation.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_calculate_enrgy.xml" value="0.20729166666666668" />
-        <entry key="app/src/main/res/layout/activity_cost_result.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_cost_result.xml" value="0.625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/add_garbage.xml" value="0.20625" />
         <entry key="app/src/main/res/layout/biogas_home.xml" value="0.20729166666666668" />
@@ -24,6 +24,8 @@
         <entry key="app/src/main/res/layout/solar_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/solar_intro.xml" value="0.20625" />
         <entry key="app/src/main/res/layout/summary_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/user_details.xml" value="0.20729166666666668" />
+        <entry key="app/src/main/res/layout/user_profile.xml" value="0.20729166666666668" />
       </map>
     </option>
   </component>

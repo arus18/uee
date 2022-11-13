@@ -63,15 +63,14 @@
         android:id="@+id/textView18"
         android:layout_width="21dp"
         android:layout_height="24dp"
-        android:layout_marginStart="144dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="476dp"
         android:text="3"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -134,14 +133,14 @@
         android:id="@+id/textView26"
         android:layout_width="90dp"
         android:layout_height="25dp"
-        android:layout_marginTop="20dp"
         android:text="Recalculate"
         android:textColor="#3F51B5"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
-        app:layout_constraintEnd_toEndOf="@+id/textView22"
-        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
         app:layout_constraintVertical_bias="0.22" />
 
@@ -150,15 +149,16 @@
         android:layout_width="63dp"
         android:layout_height="20dp"
         android:layout_marginStart="171dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="177dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="184dp"
         android:text="History"
         android:textColor="#3F51B5"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -175,28 +175,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="80dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="36dp"
-        android:text="Sq .Ft ( m )"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.766" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="70dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="50"
