@@ -21,6 +21,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/money" />
+
         <TextView
             android:id="@+id/costHeading"
             android:layout_width="wrap_content"
@@ -46,12 +53,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cost">
 
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/fire" />
+
         <TextView
             android:id="@+id/energyHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Energy Calculation"
+            android:text="Energy"
             android:textSize="34sp" />
     </androidx.cardview.widget.CardView>
 
@@ -69,6 +83,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/energy">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/feedback" />
 
         <TextView
             android:id="@+id/feedback"

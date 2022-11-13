@@ -48,7 +48,7 @@ public class ResultAdapter extends BaseAdapter {
         view = LayoutInflater.from(context).inflate(R.layout.history_item, viewGroup, false);
         result = view.findViewById(R.id.history_item_text);
         delete = view.findViewById(R.id.delete_result);
-        result.setText(arrayList.get(i).getResult());
+        result.setText(arrayList.get(i).getResult()+"m^3");
         builder = new AlertDialog.Builder(context);
         builder.setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {

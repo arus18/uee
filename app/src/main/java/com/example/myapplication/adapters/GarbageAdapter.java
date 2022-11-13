@@ -50,7 +50,7 @@ public class GarbageAdapter extends BaseAdapter {
         view = LayoutInflater.from(context).inflate(R.layout.garbage_item, viewGroup, false);
         result = view.findViewById(R.id.garbage_item_text);
         delete = view.findViewById(R.id.delete_garbage);
-        result.setText(String.valueOf(arrayList.get(i).getSize()));
+        result.setText(String.valueOf(arrayList.get(i).getSize())+"Kgs, "+arrayList.get(i).getStartDate()+","+arrayList.get(i).getEndDate());
         builder = new AlertDialog.Builder(context);
         builder.setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {

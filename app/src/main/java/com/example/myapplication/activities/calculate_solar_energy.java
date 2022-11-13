@@ -12,16 +12,16 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
-import com.example.myapplication.database.SolarEnergyResultDBHelper;
+import com.example.myapplication.database.EnergyCalculationResultDatabaseHelper;
 
 
 public class calculate_solar_energy extends AppCompatActivity{
-    SolarEnergyResultDBHelper db;
+    EnergyCalculationResultDatabaseHelper db;
     EditText SiteName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        db=new SolarEnergyResultDBHelper(this);
+        db=new EnergyCalculationResultDatabaseHelper(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculate_solar_energy);
         Button button = findViewById(R.id.btncalc);
@@ -31,9 +31,6 @@ public class calculate_solar_energy extends AppCompatActivity{
         Spinner spinnerType = findViewById(R.id.area_type);
         Spinner spinnerMessure = findViewById(R.id.measure_type);
 
-
-
-        db = new SolarEnergyResultDBHelper(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

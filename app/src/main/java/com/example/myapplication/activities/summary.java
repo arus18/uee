@@ -9,12 +9,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
-import com.example.myapplication.database.SolarEnergyResultDBHelper;
-import com.example.myapplication.network.BiogasEnergyAPICall;
+import com.example.myapplication.database.EnergyCalculationResultDatabaseHelper;
 
 public class summary extends AppCompatActivity {
 
-    SolarEnergyResultDBHelper db;
+    EnergyCalculationResultDatabaseHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +21,7 @@ public class summary extends AppCompatActivity {
 
 
 
-        db = new SolarEnergyResultDBHelper(this);
+        db = new EnergyCalculationResultDatabaseHelper(this);
 
         TextView T1=(TextView) findViewById(R.id.Sname);
         TextView T2=(TextView) findViewById(R.id.area);

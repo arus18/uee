@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="Name"
+        android:text="Welcome!"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/solar"
@@ -20,10 +20,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/solar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="50dp"
         app:cardBackgroundColor="#F6805A"
         app:cardCornerRadius="5dp"
         app:contentPadding="15dp"
@@ -52,10 +51,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/biogas"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="50dp"
         app:cardBackgroundColor="#76E87A"
         app:contentPadding="15dp"
         app:layout_constraintBottom_toTopOf="@+id/aboutBiogas"
@@ -69,8 +67,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/leaf"
-            />
+            android:background="@drawable/leaf" />
 
         <TextView
             android:id="@+id/biogasHeading"
@@ -115,13 +112,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
         android:foregroundGravity="center"
         app:cardBackgroundColor="#4CAEDA"
         app:contentPadding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_setting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,9 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="326dp"
-        android:layout_marginTop="77dp"
         android:layout_marginEnd="27dp"
-        android:layout_marginBottom="16dp"
         android:text="@string/tv_setting"
         android:textAlignment="center"
         android:textColor="#CC000000"
@@ -157,8 +150,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutSolar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/aboutSolar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,8 +7,7 @@
     <ImageView
         android:id="@+id/delete_result"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.15"
+        android:layout_height="50dp"
         app:srcCompat="@android:drawable/ic_delete" />
 
     <TextView
@@ -17,5 +16,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="34sp" />
 </LinearLayout>

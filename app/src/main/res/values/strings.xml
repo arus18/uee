@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">EcoBee</string>
     <string-array name="group">
         <item>Vegetables</item>
         <item>Fat, oil</item>
@@ -82,8 +82,8 @@
     </string-array>
 
     <string-array name="messure">
-    <item>Meter</item>
-    <item>Foots</item>
+        <item>Meter</item>
+        <item>Foots</item>
     </string-array>
     <string name="dialog_message">Welcome to Alert Dialog</string>
     <string name="dialog_title">Javatpoint Alert Dialog</string>

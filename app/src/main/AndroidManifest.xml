@@ -16,97 +16,106 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".activities.BiogasIntro"
+            android:exported="false" />
+        <activity
             android:name=".activities.CalculatePanelCost"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activities.PanelRequest"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:label="Panel Request" />
         <activity
             android:name=".activities.UserProfile"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:label="User Profile"></activity>
         <activity
             android:name=".activities.RequestPanel"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:label="Request Panel"></activity>
         <activity
             android:name=".activities.ChangePwd"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:label="Change Password"></activity>
         <activity
             android:name=".activities.UserDetails"
-            android:exported="false">
-        </activity> 
+            android:exported="false"
+            android:label="User Details"></activity>
+        <activity
             android:name=".activities.CostHistory2"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:label="Cost History"></activity>
         <activity
             android:name=".activities.CostHistory"
-            android:exported="false"></activity>
+            android:exported="false"
+            android:label="Cost History" />
         <activity
             android:name=".activities.CostResult"
-            android:exported="false"></activity>
+            android:exported="false"
+            android:label="Cost Result" />
         <activity
             android:name=".activities.CostMoreDetails"
-            android:exported="false"></activity>
+            android:exported="false"
+            android:label="More Details" />
         <activity
             android:name=".activities.AddCostCalculation"
-            android:exported="false">
-            </activity>
-         <activity
+            android:exported="false"
+            android:label="Cost Calculation"></activity>
+        <activity
             android:name=".activities.GarbageHistory"
             android:exported="false"
-            android:label="History"/>
+            android:label="History" />
         <activity
             android:name=".activities.AddGarbage"
             android:exported="false"
-            android:label="Add Garbage"/>
+            android:label="Add Garbage" />
         <activity
             android:name=".activities.Result"
             android:exported="false"
-            android:label="Result"/>
+            android:label="Result" />
         <activity
             android:name=".activities.History"
             android:exported="false"
-            android:label="History"/>
+            android:label="History" />
         <activity
             android:name=".activities.BiogasHome"
             android:exported="false"
-            android:label="Biogas"/>
+            android:label="Biogas" />
         <activity
             android:name=".activities.Home"
             android:exported="false"
-            android:label="Home"/>
+            android:label="Home" />
         <activity
             android:name=".activities.CalculateEnergy"
             android:exported="false"
-            android:label="Calculate Energy"/>
-            
+            android:label="Calculate Energy" />
         <activity
             android:name=".activities.calculate_solar_energy"
-            android:exported="false" />
-
+            android:exported="false"
+            android:label="Calculate Energy" />
         <activity
             android:name=".activities.solar_history"
-            android:exported="false" />
-            
+            android:exported="false"
+            android:label="History" />
         <activity
             android:name=".activities.summary"
-            android:exported="false" />
-            
+            android:exported="false"
+            android:label="Output" />
         <activity
             android:name=".activities.SolarHome"
-            android:exported="false" />
-
+            android:exported="false"
+            android:label="Home" />
         <activity
             android:name=".activities.feedback"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Feedback" />
         <activity
             android:name=".activities.thank"
             android:exported="false" />
-
+        <activity
+            android:name=".activities.Solar_intro"
+            android:exported="false"
+            android:label="Introduction" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

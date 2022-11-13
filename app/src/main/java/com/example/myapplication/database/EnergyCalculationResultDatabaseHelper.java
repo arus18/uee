@@ -1,4 +1,5 @@
 package com.example.myapplication.database;
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -11,6 +12,7 @@ import com.example.myapplication.model.CollectedGarbage;
 import com.example.myapplication.model.EnergyCalculationResult;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper{
@@ -27,6 +29,9 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper{
     private static final String KEY_START_DATE = "start_date";
     private static final String KEY_END_DATE = "end_date";
     private static final String COLLECTED_GARBAGE = "collected_garbage";
+    private static final String TABLE_SOLAR_ENERGY_RESULT = "solar_energy_results";
+
+    public static final String COL_1 = "SiteName";
 
     public EnergyCalculationResultDatabaseHelper(@Nullable Context context) {
         super(context,DATABASE_NAME, null, 1);
@@ -40,17 +45,16 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper{
         String CREATE_GARBAGE_TABLE = "CREATE TABLE " + TABLE_GARBAGE_RESULTS + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_START_DATE + " TEXT,"
                 + KEY_END_DATE + " TEXT," + COLLECTED_GARBAGE + " INTEGER" + ")";
-        System.out.println(CREATE_CONTACTS_TABLE);
         db.execSQL(CREATE_CONTACTS_TABLE);
         db.execSQL(CREATE_GARBAGE_TABLE);
+        db.execSQL("CREATE TABLE solar_energy_results(SiteName TEXT, Area REAL, Output REAL,Units REAL,Income REAL)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_ENERGY_CALCULATION_RESULTS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_GARBAGE_RESULTS);
-        onCreate(db);
-        onCreate(db);
+        db.execSQL("drop Table if exists solar_energy_results");
     }
 
 
@@ -132,6 +136,36 @@ public class EnergyCalculationResultDatabaseHelper extends SQLiteOpenHelper{
         db.delete(TABLE_GARBAGE_RESULTS, KEY_ID + " = ?",
                 new String[] { String.valueOf(garbage.getId()) });
         db.close();
+    }
+    public boolean addResult(String SiteName,Float Area,Float Output,Float Units,Float Income) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("SiteName",SiteName);
+        values.put("Area",Area);
+        values.put("Output",Output);
+        values.put("Units",Units);
+        values.put("Income",Income);
+        long result=db.insert("solar_energy_results",null,values);
+        if(result==-1){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
+    @SuppressLint("Range")
+    public ArrayList<HashMap<String, String>> getAllSolarResults(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ArrayList<HashMap<String, String>> calcList = new ArrayList<>();
+        String query = "SELECT SiteName FROM "+ TABLE_SOLAR_ENERGY_RESULT;
+        Cursor cursor = db.rawQuery(query,null);
+        while (cursor.moveToNext()){
+            HashMap<String,String> calc = new HashMap<>();
+            calc.put("SiteName", cursor.getString(cursor.getColumnIndex(COL_1)));
+            calcList.add(calc);
+        }
+        return  calcList;
     }
 
 

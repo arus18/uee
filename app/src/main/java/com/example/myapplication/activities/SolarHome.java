@@ -18,6 +18,7 @@ public class SolarHome extends AppCompatActivity {
         setContentView(R.layout.solar_home);
         CardView cardView = findViewById(R.id.energy);
         CardView cardView1=findViewById(R.id.feed);
+        CardView cardView2 = findViewById(R.id.cost);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +32,14 @@ public class SolarHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SolarHome.this,feedback.class);
+                startActivity(intent);
+            }
+        });
+
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SolarHome.this,CalculatePanelCost.class);
                 startActivity(intent);
             }
         });

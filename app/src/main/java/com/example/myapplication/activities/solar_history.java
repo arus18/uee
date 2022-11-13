@@ -3,7 +3,6 @@ package com.example.myapplication.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -12,13 +11,10 @@ import android.widget.SimpleAdapter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
-import com.example.myapplication.database.SolarEnergyResultDBHelper;
-import com.example.myapplication.model.EnergyCalculationResult;
-import com.example.myapplication.model.SolarEnergyResult;
+import com.example.myapplication.database.EnergyCalculationResultDatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class solar_history extends AppCompatActivity {
 
@@ -39,7 +35,7 @@ public class solar_history extends AppCompatActivity {
         );
         listView.setAdapter(arr);*/
 
-        SolarEnergyResultDBHelper db = new SolarEnergyResultDBHelper(this);
+        EnergyCalculationResultDatabaseHelper db = new EnergyCalculationResultDatabaseHelper(this);
 
         ArrayList<HashMap<String, String>> calcList = db.getAllSolarResults();
         ListView listView = findViewById(R.id.solar_history_list);

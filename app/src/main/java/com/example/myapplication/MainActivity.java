@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = findViewById(R.id.signin);
 
-        Button buttonSolar = findViewById(R.id.solar);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,12 +27,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonSolar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SolarHome.class);
-                startActivity(intent);
-            }
-        });
     }
 }
